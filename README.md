@@ -19,5 +19,5 @@ This script can add the "thug life filter" in any image with a face. For example
 ## How to use it :
 
 ```py
-python3 thug_life_maker.py your_full_path_image.jpg
+python3 thug_life_maker.py your_image.jpg
 ```
