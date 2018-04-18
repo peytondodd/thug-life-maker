@@ -1,7 +1,16 @@
 from PIL import Image
 import cv2
+import sys
 
-imagePath = 'images/hatim.jpg'
+if len(sys.argv) == 1:
+    print('default image "images/hatim.jpg" has been choosed to test the programm')
+    imagePath = 'images/hatim.jpg'
+elif len(sys.argv) == 2:
+    imagePath = sys.argv[1]
+else:
+    print('Error : you have to run the program like this :\npyhton3 myimage.png')
+    exit(-1)
+
 maskPath = "images/mask.png"
 faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
@@ -16,6 +25,16 @@ for (x, y, width, height) in faces:
     mask = mask.resize((width, height), Image.ANTIALIAS)# ANTIALIAS to make image smooth
     offset = (x, y)
     background_image.paste(mask, offset, mask=mask)# mask= keep transparency
+    
+try:
+    background_image.save('result/result.{}'.format(background_image.format))
+    print('successfully saved in result/result.{}'.format(background_image.format))
+except:
+    print('Failed to saved the image')
+    exit(-1)
 
-background_image.save('result/result.' + background_image.format)
-background_image.show()
+try:
+    background_image.show()
+except:
+    print('make sure that you have an image viewer installed in your system')
+    exit(-1)
