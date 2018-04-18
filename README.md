@@ -12,7 +12,7 @@ This script can add the "thug life filter" in any image with a face. For example
  1. Install python 3 
  2. Install PIL and opencv 
 	 ```
- 	 pip3 install opencv-python pillowt
+ 	 pip3 install opencv-python pillow
 	```
 
 ## How to use it :
