@@ -1,3 +1,8 @@
+"""
+@Author : AJDAINI Hatim
+@Github : https://github.com/Hajdaini
+"""
+
 from PIL import Image
 import cv2
 import sys
