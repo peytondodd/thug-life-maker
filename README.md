@@ -18,5 +18,6 @@ This script can add the "thug life filter" in any image with a face. For example
 ## How to use it :
 
 ```py
+sudo apt-get -y install python3-pip
 python thug_life_maker.py your_full_path_image.jpg
 ```
