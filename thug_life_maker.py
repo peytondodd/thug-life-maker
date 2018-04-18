@@ -1,6 +1,6 @@
 """
 @Author : AJDAINI Hatim
-@Github : https://github.com/Hajdaini
+@GitHub : https://github.com/Hajdaini
 """
 
 from PIL import Image
