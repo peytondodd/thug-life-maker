@@ -1,8 +1,7 @@
 # thug-life-maker
 
 ## Description : 
-This script can add the "thug life filter" in any image with a face.
-<br /><br />***Example :***
+This script can add the "thug life filter" in any image with a face.For example
 <br /><br /><b>before :</b>
 <img src="images/hatim.jpg" width="100">
 <br /><b>after :</b>
