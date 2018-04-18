@@ -10,7 +10,7 @@ import sys
 if len(sys.argv) == 2:
     imagePath = sys.argv[1]
 else:
-    print('Error : you have to run the program like this :\npyhton3 thug_life_maker.py our_full_path_image.jpg')
+    print('Error : you have to run the program like this :\npython3 thug_life_maker.py our_full_path_image.jpg')
     exit(-1)
 
 maskPath = "images/mask.png"
