@@ -12,12 +12,12 @@ This script can add the "thug life filter" in any image with a face. For example
  1. Install python 3 
  2. Install PIL and opencv 
 	 ```
+	 sudo apt-get -y install python3-pip
  	 pip3 install opencv-python pillow
 	```
 
 ## How to use it :
 
 ```py
-sudo apt-get -y install python3-pip
-python thug_life_maker.py your_full_path_image.jpg
+python3 thug_life_maker.py your_full_path_image.jpg
 ```
